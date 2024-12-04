@@ -1,0 +1,13 @@
+.asset filter=lfs diff=lfs merge=lfs -text
+.bhc filter=lfs diff=lfs merge=lfs -text
+.dag filter=lfs diff=lfs merge=lfs -text
+.json filter=lfs diff=lfs merge=lfs -text
+.payloads filter=lfs diff=lfs merge=lfs -text
+.dll filter=lfs diff=lfs merge=lfs -text
+.dylib filter=lfs diff=lfs merge=lfs -text
+.so filter=lfs diff=lfs merge=lfs -text
+GapGap/Library/PackageCache/com.unity.burst@1.8.9/.Runtime/libburst-llvm-15.dylib filter=lfs diff=lfs merge=lfs -text
+.exe filter=lfs diff=lfs merge=lfs -text
+.gif filter=lfs diff=lfs merge=lfs -text
+.png filter=lfs diff=lfs merge=lfs -text
+NewClone/GapGap/Library/PackageCache/com.unity.burst@1.8.9/.Runtime/libburst-llvm-10.dylib filter=lfs diff=lfs merge=lfs -text
