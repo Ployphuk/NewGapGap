@@ -7,6 +7,7 @@ public class CallFadeAnimation : MonoBehaviour
     [SerializeField] Animator FadeAnim;
     [SerializeField] GameObject FadeObject;
     [SerializeField] GameObject Dialogue;
+    public GameObject NextScene;
    
    public void StartAnimation()
     {
@@ -21,5 +22,6 @@ public class CallFadeAnimation : MonoBehaviour
         FadeAnim.SetTrigger("Start");
         FadeObject.SetActive(false);
         Dialogue.SetActive(false);
+        NextScene.SetActive(true);
     }
 }
