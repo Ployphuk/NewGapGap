@@ -5,9 +5,12 @@ using UnityEngine;
 public class CallFadeAnimation : MonoBehaviour
 {
     [SerializeField] Animator FadeAnim;
+    [SerializeField] GameObject FadeObject;
+    [SerializeField] GameObject Dialogue;
    
    public void StartAnimation()
     {
+        FadeObject.SetActive(true);
         StartCoroutine(CallAnimation());
     }
 
@@ -16,5 +19,7 @@ public class CallFadeAnimation : MonoBehaviour
         FadeAnim.SetTrigger("End");
         yield return new WaitForSeconds(1);
         FadeAnim.SetTrigger("Start");
+        FadeObject.SetActive(false);
+        Dialogue.SetActive(false);
     }
 }
