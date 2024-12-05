@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed;
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D Playerrigidbody;
     private Vector3 change;
     private Animator animator;
     private bool isMoving;
@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         
-        rigidbody = GetComponent<Rigidbody2D>();
+        Playerrigidbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
 
     void MoveCharacter()
     {
-        rigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
+        Playerrigidbody.MovePosition(transform.position + change * speed * Time.deltaTime);
     }
 
 }
