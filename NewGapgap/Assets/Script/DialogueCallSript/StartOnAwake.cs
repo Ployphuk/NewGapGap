@@ -8,21 +8,7 @@ public class StartOnAwake : MonoBehaviour
     [SerializeField] public NPCConversation dialogue;
     public GameObject ConversationPrefab;
 
-    private static bool hasAwoken = false;
-
-    void Awake()
-    {
-        if (!hasAwoken)
-        {
-            hasAwoken = true;
-            // Your Awake logic here
-            Debug.Log("Awake is called for the first time.");
-        }
-        else
-        {
-            Debug.Log("Awake is skipped.");
-        }
-    }
+   
 
     private void OnEnable()
     {
