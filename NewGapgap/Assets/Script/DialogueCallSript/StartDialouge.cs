@@ -26,7 +26,7 @@ public class StartDialouge : MonoBehaviour
 
     private void Update()
     {
-        if (playerInRange && Input.GetKeyDown(KeyCode.E))
+        if (playerInRange && Input.GetKeyDown(KeyCode.E ))
         {
             ConversationManager.Instance.StartConversation(dialogueTest);
         }

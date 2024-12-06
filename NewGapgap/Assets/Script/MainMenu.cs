@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     [SerializeField] Animator transition;
     public GameObject SceneObject;
+    public int SceneNum;
   
     public void Awake()
     {
@@ -24,7 +25,7 @@ public class MainMenu : MonoBehaviour
     {
         transition.SetTrigger("End");
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + SceneNum);
         transition.SetTrigger("Start");
     }
 

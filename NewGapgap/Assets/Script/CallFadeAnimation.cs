@@ -6,8 +6,8 @@ public class CallFadeAnimation : MonoBehaviour
 {
     [SerializeField] Animator FadeAnim;
     [SerializeField] GameObject FadeObject;
-    [SerializeField] GameObject Dialogue;
-    public GameObject NextScene;
+    [SerializeField] GameObject CloseDialogue;
+    public GameObject OpenNextScene;
    
    public void StartAnimation()
     {
@@ -21,7 +21,7 @@ public class CallFadeAnimation : MonoBehaviour
         yield return new WaitForSeconds(1);
         FadeAnim.SetTrigger("Start");
         FadeObject.SetActive(false);
-        Dialogue.SetActive(false);
-        NextScene.SetActive(true);
+        CloseDialogue.SetActive(false);
+        OpenNextScene.SetActive(true);
     }
 }
