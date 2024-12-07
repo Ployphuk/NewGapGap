@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Dialogue Editor
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 371}
   m_MaxSize: {x: 10000, y: 10000}
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 49
+  controlID: 75
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 50
+  controlID: 76
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 50}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 51
+  controlID: 57
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: DialogueEditorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -215,16 +215,16 @@ MonoBehaviour:
     y: 0
     width: 1051
     height: 648
-  m_MinSize: {x: 202, y: 221}
+  m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 14}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 14}
   - {fileID: 16}
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 2
+  m_Selected: 2
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 71
+  controlID: 77
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -816,9 +816,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 000c0200
-      m_LastClickedID: 134144
-      m_ExpandedIDs: 7a81ffff7282ffff6c83ffff5a84ffff7085ffffb485ffff6e86ffffd087ffffa090ffff7091ffff2894ffff2a9dffff2c9dffff709effff8e9fffff2ea1ffff02a2ffffd0a2ffff46a4ffff04a9ffff1ea9ffff5caaffff82b1ffffc2b2ffff44b4ffff2acaffff38caffff56ccffffc2d0ffff34d3ffffcad4ffffd4d5ffff1ed6ffffb6d7ffff02d8ffff94d8ffffecd8ffff38d9ffff98d9ffff20daffff6adaffff1edbffff16ebffff08ecfffff2ecffff70f4ffff22f6ffffc6f7ffff6ef9ffff16fbfffff4f50100
+      m_SelectedIDs: 0ed80100
+      m_LastClickedID: 120846
+      m_ExpandedIDs: 1ed2ffff4cd3ffff3cd5ffffd0d5ffff64d6ffff1ed7ffffb2d7ffff6cd8ffffc2d9ffff1cdbffffb0dbffff44dcffffdcddffff70deffff04dfffff9edfffff30e0ffffd4e0ffffeae1ffffeee2ffff88e3ffff1ae4ffffb4e4ffff46e5ffffe0e5ffff74e6ffff0ee7ffff2ce8ffff12e9ffff0eeaffff04ebffff96ebffff7cecffff0eedfffff6edffff3aefffffcaf0ffff9cf2ffff24f4ffffb4f5ffff16fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1221,7 +1221,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes/case1
+    - Assets/Art/Profile
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1229,16 +1229,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/case1
+  - Assets/Art/Profile
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\THESIS\TestNewRepo\NewGapgap
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 294}
-    m_SelectedIDs: 0a710100
-    m_LastClickedID: 94474
-    m_ExpandedIDs: 00000000a0700100a2700100a4700100a6700100a8700100aa700100ac700100ae700100b070010000ca9a3b
+    scrollPos: {x: 0, y: 111}
+    m_SelectedIDs: c8710100
+    m_LastClickedID: 94664
+    m_ExpandedIDs: 000000009471010096710100987101009a7101009c7101009e710100a0710100a2710100a471010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1266,7 +1266,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a0700100a2700100a4700100a6700100a8700100aa700100ac700100ae700100b0700100
+    m_ExpandedIDs: 000000009471010096710100987101009a7101009c7101009e710100a0710100a2710100a4710100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
