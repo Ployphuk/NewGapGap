@@ -9,4 +9,9 @@ public class ActivateNpc : MonoBehaviour
     {
         npc.SetActive(true);
     }
+
+    public void SetDisAble()
+    {
+        npc.SetActive(false);
+    }
 }
