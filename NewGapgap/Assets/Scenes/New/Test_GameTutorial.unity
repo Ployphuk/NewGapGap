@@ -7575,8 +7575,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FadeAnim: {fileID: 830743533}
   FadeObject: {fileID: 759820827}
-  Dialogue: {fileID: 63019204}
-  NextScene: {fileID: 1363103701}
+  CloseDialogue: {fileID: 0}
+  OpenNextScene: {fileID: 0}
 --- !u!114 &1719763706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8551,9 +8551,9 @@ SceneRoots:
   - {fileID: 1455562477}
   - {fileID: 956135812}
   - {fileID: 1240552748}
+  - {fileID: 1098474557}
   - {fileID: 1052461593}
   - {fileID: 1653752945}
-  - {fileID: 1098474557}
   - {fileID: 134771012}
   - {fileID: 839217182}
   - {fileID: 1367776671}
