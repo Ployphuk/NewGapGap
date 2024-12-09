@@ -12,21 +12,22 @@ public class QuestionPoints
 public class PointsData
 {
     public List<QuestionPoints> pointsList = new List<QuestionPoints>();
+    public int totalPoints;  // New field to store the summary of all points
 }
 
 public class PointsManager : MonoBehaviour
 {
-    void Awake()
-    {
-        DontDestroyOnLoad(gameObject);
-    }
-
     private string filePath;
     public PointsData pointsData = new PointsData();
 
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+        filePath = Application.persistentDataPath + "/pointsData.json";
+    }
+
     void Start()
     {
-        filePath = Application.persistentDataPath + "/pointsData.json";
         LoadPointsData();
     }
 
@@ -41,9 +42,7 @@ public class PointsManager : MonoBehaviour
 
     public void SavePointsData()
     {
-        string filePath = Application.persistentDataPath + "/pointsData.json";
         string json = JsonUtility.ToJson(pointsData, true);
-        Debug.Log("Saving JSON to: " + filePath);
         System.IO.File.WriteAllText(filePath, json);
     }
 
@@ -58,6 +57,9 @@ public class PointsManager : MonoBehaviour
         {
             pointsData.pointsList.Add(new QuestionPoints { questionNumber = questionNumber, points = points });
         }
+
+        // Update total points summary
+        pointsData.totalPoints += points;
 
         SavePointsData();
     }
