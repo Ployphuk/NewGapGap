@@ -79,12 +79,12 @@ public class GameController : MonoBehaviour
 
     void UpdateScoreText()
     {
-        scoreText.text = "Score: " + score; // Update the text
+        scoreText.text = "" + score; // Update the text
     }
 
     void UpdateMissText()
     {
-        missText.text = "Misses: " + missCount; // Update the text
+        missText.text = "" + missCount; // Update the text
     }
 
     void GameOver()
