@@ -27,7 +27,11 @@ public class ResolutionManager : MonoBehaviour
         for (int i = 0; i < resolutions.Length; i++)
         {
             Debug.Log("Resolution: " + resolutions[i]);
-            if (resolutions[i].refreshRate == currentRefreshRate)
+            float aspectRatio = (float)resolutions[i].width / resolutions[i].height;
+            
+            // ตรวจสอบว่าอัตราส่วนเป็น 16:9 หรือ 16:10 และ refresh rate ตรงกัน
+            if ((Mathf.Approximately(aspectRatio, 16f / 9f) || Mathf.Approximately(aspectRatio, 16f / 10f)) &&
+                resolutions[i].refreshRate == currentRefreshRate)
             {
                 filteredResolutions.Add(resolutions[i]);
             }
