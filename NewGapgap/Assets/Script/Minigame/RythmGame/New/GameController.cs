@@ -90,7 +90,7 @@ public class GameController : MonoBehaviour
     void GameOver()
     {
         gameOverScreen.SetActive(true); // Show the game over UI
-        Time.timeScale = 0; // Pause the game
+         // Pause the game
     }
 
     public void RestartGame()
