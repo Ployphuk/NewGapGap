@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class FullScreenToggle : MonoBehaviour
 {
-    // Start is called before the first frame update
-     void Start()
+    public void SetFullscreen()
     {
-        // Toggle fullscreen
         Screen.fullScreen = !Screen.fullScreen;
     }
 }
