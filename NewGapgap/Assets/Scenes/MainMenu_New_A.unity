@@ -8955,7 +8955,7 @@ GameObject:
   - component: {fileID: 1929308056}
   - component: {fileID: 1929308057}
   m_Layer: 5
-  m_Name: Test Setting Maneger
+  m_Name: Fullscreen Maneger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8992,6 +8992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff674bb8bc3d5634d9d8fa09d5e8a9d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FToggle: {fileID: 1936065271}
 --- !u!1 &1936065269
 GameObject:
   m_ObjectHideFlags: 0
