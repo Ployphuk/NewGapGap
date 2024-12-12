@@ -7,6 +7,9 @@ public class AudioController : MonoBehaviour
 {
     public AudioSource audioSource;
 
+    // List the scenes where music should NOT play
+    public List<string> scenesWithoutMusic = new List<string> { "RotateGame", "RythmGame"};
+
     void Awake()
     {
         // Ensure there's only one MusicController instance
@@ -17,13 +20,40 @@ public class AudioController : MonoBehaviour
         else
         {
             DontDestroyOnLoad(gameObject); // Keep the MusicController when changing scenes
-            audioSource.Play(); // Play the music when the scene starts
         }
     }
 
-    // Optionally, stop the music when exiting the game (useful in the main menu)
+    void Start()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded; // Subscribe to the sceneLoaded event
+        UpdateMusicStatus(SceneManager.GetActiveScene().name); // Check the current scene
+    }
+
     void OnDestroy()
     {
-        audioSource.Stop();
+        SceneManager.sceneLoaded -= OnSceneLoaded; // Unsubscribe from the event to avoid memory leaks
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        UpdateMusicStatus(scene.name);
+    }
+
+    void UpdateMusicStatus(string sceneName)
+    {
+        if (scenesWithoutMusic.Contains(sceneName))
+        {
+            if (audioSource.isPlaying)
+            {
+                audioSource.Stop();
+            }
+        }
+        else
+        {
+            if (!audioSource.isPlaying)
+            {
+                audioSource.Play();
+            }
+        }
     }
 }

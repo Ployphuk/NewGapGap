@@ -2285,7 +2285,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36c3bf864ceb64a4c9dead76474fb170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1829554572}
   volumeSlider: {fileID: 1681205487}
 --- !u!1 &904804881
 GameObject:
@@ -2664,7 +2663,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36c3bf864ceb64a4c9dead76474fb170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1829554572}
   volumeSlider: {fileID: 249349538}
 --- !u!1 &1059195449
 GameObject:
@@ -8003,6 +8001,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1829554572}
+  scenesWithoutMusic:
+  - RotateGame
+  - RythmGame
 --- !u!4 &1829554574
 Transform:
   m_ObjectHideFlags: 0
