@@ -2418,7 +2418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   notePrefab: {fileID: 3254336723992273681, guid: 52af273bcf62f5a46a2ee4722f0903e8, type: 3}
-  spawnInterval: 2
+  spawnInterval: 3
 --- !u!212 &843661573
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4027,7 +4027,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e43b4630e3b5ab14cbb7bc337b7548d2, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.138
+  m_Volume: 0.037
   m_Pitch: 1
   Loop: 1
   Mute: 0
