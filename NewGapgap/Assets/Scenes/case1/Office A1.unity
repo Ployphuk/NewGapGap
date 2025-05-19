@@ -3697,23 +3697,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3415922625145675066, guid: ee48c6a1fc10c684998c1e0f7c78ec70, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.4880264
+      value: 0.36294037
       objectReference: {fileID: 0}
     - target: {fileID: 3415922625145675066, guid: ee48c6a1fc10c684998c1e0f7c78ec70, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.4880264
+      value: 0.36294037
       objectReference: {fileID: 0}
     - target: {fileID: 3415922625145675066, guid: ee48c6a1fc10c684998c1e0f7c78ec70, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.4880264
+      value: 0.36294037
       objectReference: {fileID: 0}
     - target: {fileID: 3415922625145675066, guid: ee48c6a1fc10c684998c1e0f7c78ec70, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -238
+      value: -224
       objectReference: {fileID: 0}
     - target: {fileID: 3415922625145675066, guid: ee48c6a1fc10c684998c1e0f7c78ec70, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 241
+      value: 219
       objectReference: {fileID: 0}
     - target: {fileID: 5676733620905139082, guid: ee48c6a1fc10c684998c1e0f7c78ec70, type: 3}
       propertyPath: m_Pivot.x
@@ -16528,6 +16528,10 @@ PrefabInstance:
     - target: {fileID: 2865500491815508640, guid: 54d202ce251ace24fa01c9cee4de3ef3, type: 3}
       propertyPath: m_Name
       value: ConversationCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 6635165247387700571, guid: 54d202ce251ace24fa01c9cee4de3ef3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
